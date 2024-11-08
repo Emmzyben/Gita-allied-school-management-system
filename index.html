@@ -99,7 +99,50 @@
 </div>
 
 <!-- underhero -->
-
+<div id="flag-container">
+    <div id="flagger">
+      <div class="flag-container-inner"></div>
+    </div>
+    <script>
+      
+  const countryFlags = ['images/Frame 32.svg', 'images/Frame 33.svg', 'images/Frame 34.svg', 'images/Frame 35.svg', 'images/Frame 36.svg'];
+  
+  const flagContainerInner = document.querySelector('.flag-container-inner');
+  
+  function createFlagElement(flagPath) {
+    const flagElement = document.createElement('img');
+    flagElement.src = flagPath;
+    flagElement.classList.add('flag');
+    return flagElement;
+  }
+  
+  // Duplicate the images to ensure seamless rolling effect
+  const duplicatedFlags = [...countryFlags, ...countryFlags];
+  
+  duplicatedFlags.forEach(flagPath => {
+    const flagElement = createFlagElement(flagPath);
+    flagContainerInner.appendChild(flagElement);
+  });
+  
+  let currentPosition = 0;
+  const increment = 0.05; // Adjust the increment value for the desired speed
+  
+  function rollFlags() {
+    currentPosition -= increment;
+    flagContainerInner.style.transform = `translateX(${currentPosition}%)`;
+  
+    if (currentPosition <= -100) {
+      currentPosition = 0;
+    }
+  
+    requestAnimationFrame(rollFlags);
+  }
+  
+  // Start the animation loop
+  rollFlags();
+    </script>
+  </div>
+  
 <div id="icons">
     <div>
         <img src="images/Group (1).png" alt="">

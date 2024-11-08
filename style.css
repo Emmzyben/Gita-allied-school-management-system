@@ -236,7 +236,45 @@ footer{
 footer>div{
 padding: 30px;color: #F9FAFB;margin: 30px;
 }
-@media only screen and (max-width: 800px){
+#flag-container {
+    white-space: nowrap;
+    overflow: hidden;
+   background-color: #fff;display: none;
+  }
+  
+  .flag-container-inner {
+    display: inline-block;
+    white-space: nowrap;
+            padding: 30px;
+  }
+  
+  
+  
+  #flagger {
+    background-color: #fff;
+  }
+  
+  @media screen and (max-width:900px) {
+  .flag-container-inner {
+    display: inline-block;
+    white-space: nowrap;
+            padding: 20px;
+  }
+  #flag-container {
+    white-space: nowrap;
+    overflow: hidden;
+   background-color: #fff;display: block;
+  }
+  .flag {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    margin-right: 2%;padding: 10px;  background-color: #F8F9FC;
+    border-radius: 6px;
+  }
+  
+  }
+@media only screen and (max-width: 900px){
     footer{
         flex-direction: column;
     }
@@ -276,7 +314,7 @@ display: flex;flex-direction: column;justify-content: center;margin: 10px;paddin
         width:auto;text-align: center;height: auto;
     }
     #icons{
-justify-content:center;padding: 0;width: 100%;
+justify-content:center;padding: 0;width: 100%;display: none;
     }
     #icons>div{
         width: auto;margin: 5px; background-color: #F8F9FC;padding: 10px;

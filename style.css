@@ -176,7 +176,7 @@ margin: 40px;
 }
 .pricing>div{
     margin: 20px;background-color: #fff;padding: 20px;border-radius: 10px;box-shadow: 2px 2px 10px #b5c2eec2;
-height: auto;position: relative;}
+height: auto;}
 .pricing>div small{
     color: #152259;text-decoration: underline;font-weight: bold;
 }
@@ -186,8 +186,11 @@ height: auto;position: relative;}
 .pricing p{
     font-weight:lighter; font-size:15px;
 }
-.pricing button{
-
+.btn1{
+    position: relative;top: 12px;
+}
+.btn2{
+    position: relative;top: 210px;
 }
 .faq{
     background-image: url(images/Rectangle\ 11.png);background-position: center;background-repeat: no-repeat;

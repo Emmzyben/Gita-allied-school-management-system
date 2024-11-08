@@ -276,10 +276,10 @@ display: flex;flex-direction: column;justify-content: center;margin: 10px;paddin
         width:auto;text-align: center;height: auto;
     }
     #icons{
-justify-content:space-evenly;
+justify-content:center;padding: 0;
     }
     #icons>div{
-        width: 20%;margin: 10px; background-color: #F8F9FC;padding: 10px;
+        width: auto;margin: 10px; background-color: #F8F9FC;padding: 10px;
     }
     
     #icons p{

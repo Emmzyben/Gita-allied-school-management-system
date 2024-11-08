@@ -55,22 +55,20 @@ header>div>ul li>a:hover{
     display: none;
 }
 #side{
-    background-color: #152259;
+    background-color: #ffffff;
     height: 70px;
     display: none;
-   
+
 }
+
 .container {
     display: none;
-    float: right;
-    margin-right: 40px;
-    margin-top: 15px;
   }
   
   .bar1, .bar2, .bar3 {
     width: 20px;
     height: 5px;
-    background-color: #ffffff;
+    background-color: #152259;
     margin: 6px 0;
     transition: 0.4s;
   }
@@ -258,6 +256,12 @@ padding: 30px;color: #F9FAFB;margin: 30px;
   }
   
   @media screen and (max-width:900px) {
+    .btn1{
+        position: relative;top: 12px;
+    }
+    .btn2{
+        position: relative;top: 10px;
+    }
   .flag-container-inner {
     display: inline-block;
     white-space: nowrap;
@@ -341,9 +345,9 @@ justify-content:center;padding: 0;width: 100%;display: none;
     }
     #topper2{
         border-bottom: 1px solid rgb(231, 227, 227);
-        padding: 10px;display: block;
+        padding: 10px;display: block;background-color: #152259;
     }#topper2>small{
-        margin: 10px;
+        margin: 10px;color: #fff;
     }
     .sidenav{
         display: block;

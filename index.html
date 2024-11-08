@@ -12,6 +12,12 @@
     body {
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
     }
+    #side{
+        display: flex;flex-direction: row;justify-content: space-between;align-items: center;
+    }
+    #side>div{
+        margin: 20px;
+    }
     </style>
 </head>
 <body>
@@ -26,11 +32,11 @@
     </div>
     <div id="topper2">
         <small>
-            <a href="mailto:info@gitaalliedtech.com" style="text-decoration: none; color: black;">
-              <i class="fa fa-envelope" style="font-size:15px; color:#152259; padding-right: 10px;"></i>info@gitaalliedtech.com
+            <a href="mailto:info@gitaalliedtech.com" style="text-decoration: none; color: rgb(255, 255, 255);">
+              <i class="fa fa-envelope" style="font-size:15px; color:#ffffff; padding-right: 10px;"></i>info@gitaalliedtech.com
             </a>
           </small><br>
-          <small><i class="fa fa-phone" style="font-size:15px;color:#152259;padding-right: 10px;"></i>+2349160008878</small>
+          <small><i class="fa fa-phone" style="font-size:15px;color:#ffffff;padding-right: 10px;"></i>+2349160008878</small>
      </div>
     <header>
         <div>
@@ -48,6 +54,10 @@
         </div>
     </header>
     <div id="side">
+        <div>
+<img src="images/logo.svg" alt="" >         
+        </div>
+
         <div onclick="openNav()">
          <div class="container" onclick="myFunction(this)" id="sideNav">
              <div class="bar1"></div>
